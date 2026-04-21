@@ -1,0 +1,15 @@
+{
+  "tagline": "余烬从工作区中央慢慢上升，适合专注写作与深色阅读。",
+  "summary": "以暗场背景承接高热度中心光束，让正文像从低照度舞台里浮现出来。适合夜间写作、长段落聚焦和需要强烈视觉中心的界面偏好。",
+  "features": ["暗色专用", "动态余烬背景", "色温可调", "呼吸动画可关"],
+  "accent": {
+    "start": "#ff934f",
+    "end": "#7a2310"
+  },
+  "surface": {
+    "type": "gradient",
+    "value": "radial-gradient(circle at 50% 28%, rgba(255, 183, 77, 0.9), rgba(122, 35, 16, 0) 52%), linear-gradient(180deg, #140d0c 0%, #2f1208 54%, #0f0909 100%)"
+  },
+  "order": 10,
+  "hidden": false
+}

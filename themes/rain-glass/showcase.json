@@ -1,0 +1,15 @@
+{
+  "tagline": "雨窗折射、冷雾玻璃和偶发闪电，气氛最完整的一套主题。",
+  "summary": "把整套工作区变成一面被雨水覆盖的玻璃窗。它同时带有纹理贴图、工作区玻璃、标题栏背板和多组动态参数，是目前最完整的一套氛围型主题。",
+  "features": ["双模式", "贴图驱动雨窗背景", "标题栏动态背板", "多参数可调"],
+  "accent": {
+    "start": "#a4d8ff",
+    "end": "#22577a"
+  },
+  "surface": {
+    "type": "gradient",
+    "value": "radial-gradient(circle at 22% 20%, rgba(164, 216, 255, 0.28), transparent 40%), linear-gradient(180deg, rgba(13, 27, 42, 0.9) 0%, rgba(15, 39, 64, 0.92) 100%)"
+  },
+  "order": 30,
+  "hidden": false
+}

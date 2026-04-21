@@ -53,8 +53,8 @@
     },
     {
       "id": "workspaceGlassOpacity",
-      "label": "Workspace Glass",
-      "description": "Controls the opacity of the integrated workspace glass shell.",
+      "label": "工作区毛玻璃",
+      "description": "控制集成式工作区玻璃壳层的不透明度。",
       "type": "slider",
       "min": 0,
       "max": 1,

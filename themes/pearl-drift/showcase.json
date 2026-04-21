@@ -1,0 +1,15 @@
+{
+  "tagline": "珍珠感的虹彩与雾面玻璃壳层，适合日夜双模切换。",
+  "summary": "把工作区做成轻盈的半透明珍珠壳层，让侧栏、设置面板和正文表面保持统一的 nacre 质感。适合需要双模式兼容、但不想丢掉氛围感的主题使用者。",
+  "features": ["双模式", "虹彩动态背景", "柔雾玻璃工作区", "参数观感克制"],
+  "accent": {
+    "start": "#d9d4ff",
+    "end": "#6b68d4"
+  },
+  "surface": {
+    "type": "gradient",
+    "value": "radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0) 34%), radial-gradient(circle at 72% 28%, rgba(154, 151, 234, 0.7), rgba(154, 151, 234, 0) 36%), linear-gradient(135deg, #f8f3ff 0%, #d9d4ff 48%, #b7d5da 100%)"
+  },
+  "order": 20,
+  "hidden": false
+}

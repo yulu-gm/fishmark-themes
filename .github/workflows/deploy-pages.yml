@@ -26,6 +26,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Generate Site Data
+        shell: pwsh
+        run: ./scripts/generate-site-data.ps1
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

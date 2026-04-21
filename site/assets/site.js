@@ -1,6 +1,6 @@
 (function () {
   const releaseBaseUrl =
-    "https://github.com/yulu-gm/yulora-themes/releases/latest/download/";
+    "https://github.com/yulu-gm/yora-themes/releases/latest/download/";
   const fallbackThemes = [
     {
       id: "ember-ascend",

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yulora Themes</title>
+    <meta
+      name="description"
+      content="Yulora 官方主题展示与下载页，收录 Ember Ascend、Pearl Drift、Rain Glass。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/site.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Yulora Themes</p>
+          <h1>把主题下载入口、展示页和发布链路放到同一个仓库里。</h1>
+          <p class="hero-body">
+            这里集中提供 Yulora 官方主题包的浏览、下载与安装说明。当前收录三套主题：
+            <strong>Ember Ascend</strong>、<strong>Pearl Drift</strong>、
+            <strong>Rain Glass</strong>。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="https://github.com/yulu-gm/yulora-themes/releases/latest">
+              下载最新主题包
+            </a>
+            <a class="secondary-link" href="https://github.com/yulu-gm/yulora-themes">
+              查看 GitHub 仓库
+            </a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <p class="hero-panel-label">安装方式</p>
+          <ol class="install-steps install-steps-compact">
+            <li>打开 Yulora 主题目录</li>
+            <li>下载 zip</li>
+            <li>解压到 `themes/`</li>
+            <li>回到应用点击“刷新主题”</li>
+          </ol>
+          <p class="hero-note">压缩包解压后必须保留 `<themeId>/manifest.json` 这一层目录结构。</p>
+        </div>
+      </header>
+
+      <main>
+        <section class="theme-section">
+          <div class="section-head">
+            <p class="section-kicker">Theme Library</p>
+            <h2>三套主题，三种完全不同的氛围。</h2>
+            <p class="section-copy">
+              第一版页面先使用氛围卡与参数摘要，不强绑定真实应用截图，这样主题可以更快发布和迭代。
+            </p>
+          </div>
+          <div id="theme-grid" class="theme-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="guide-grid">
+          <article class="guide-card">
+            <p class="section-kicker">Install Guide</p>
+            <h2>用户如何安装</h2>
+            <ol class="install-steps">
+              <li>在 Yulora 设置页点击“打开主题目录”。</li>
+              <li>下载目标主题 zip 并解压到 `<userData>/themes/`。</li>
+              <li>确认解压后目录形态为 `<themeId>/manifest.json`。</li>
+              <li>返回设置页点击“刷新主题”，然后切换到目标主题。</li>
+            </ol>
+          </article>
+
+          <article class="guide-card">
+            <p class="section-kicker">Package Contract</p>
+            <h2>主题包结构约束</h2>
+            <div class="code-card">
+              <pre><code>pearl-drift/
+  manifest.json
+  tokens/
+  styles/
+  shaders/</code></pre>
+            </div>
+            <p class="guide-copy">
+              不要把 `manifest.json` 直接散在 zip 根目录，也不要多嵌一层随机文件夹名。Yulora
+              只会扫描 `<userData>/themes/&lt;id&gt;/manifest.json`。
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <p>Yulora Themes 由 <a href="https://github.com/yulu-gm/Yulora">Yulora</a> 项目维护。</p>
+        <p>
+          反馈或主题建议请前往
+          <a href="https://github.com/yulu-gm/yulora-themes/issues">GitHub Issues</a>。
+        </p>
+      </footer>
+    </div>
+
+    <script src="./assets/site.js"></script>
+  </body>
+</html>

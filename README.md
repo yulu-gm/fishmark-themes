@@ -1,0 +1,63 @@
+# Yulora Themes
+
+Yulora 官方主题展示与下载仓库。
+
+当前收录主题：
+
+- `Ember Ascend`
+- `Pearl Drift`
+- `Rain Glass`
+
+## 仓库内容
+
+- `themes/`
+  三个可直接发布的 `theme package`
+- `site/`
+  GitHub Pages 展示页源码
+- `scripts/package-themes.ps1`
+  本地与 CI 共用的主题打包脚本
+- `.github/workflows/`
+  Pages 部署与 Release 打包工作流
+
+## 安装方式
+
+1. 打开 Yulora 的主题目录 `<userData>/themes/`
+2. 从 GitHub Releases 下载目标主题 zip
+3. 解压后确认目录结构为 `<themeId>/manifest.json`
+4. 回到 Yulora 设置页，点击“刷新主题”
+
+## 主题列表
+
+### Ember Ascend
+
+- 模式：`dark`
+- 关键词：余烬、热浪、暗场聚焦
+- 亮点参数：余烬强度、色温、上升呼吸、工作区毛玻璃
+
+### Pearl Drift
+
+- 模式：`light` / `dark`
+- 关键词：虹彩珍珠、雾面玻璃、柔和高亮
+- 亮点参数：虹彩强度、流动速度、颗粒感、工作区毛玻璃
+
+### Rain Glass
+
+- 模式：`light` / `dark`
+- 关键词：雨窗、冷雾、玻璃折射
+- 亮点参数：雨量、玻璃模糊、闪电效果、镜头呼吸、冷色调强度
+
+## 本地打包
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\package-themes.ps1
+```
+
+打包完成后，压缩包会输出到 `dist/`。
+
+## GitHub Pages
+
+展示页源码位于 `site/`。建议通过 GitHub Actions 部署，而不是直接依赖 `docs/` 分支模式。
+
+## Release
+
+`release-themes.yml` 会在 tag 推送或手动触发时打包三个主题 zip 并上传到 GitHub Release。

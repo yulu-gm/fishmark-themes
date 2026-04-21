@@ -56,17 +56,15 @@ function Get-ThemeDirectories {
   return $directories
 }
 
-function Ensure-CleanDirectory {
+function Ensure-Directory {
   param(
     [Parameter(Mandatory = $true)]
     [string]$DirectoryPath
   )
 
-  if (Test-Path -LiteralPath $DirectoryPath) {
-    Remove-Item -LiteralPath $DirectoryPath -Recurse -Force
+  if (-not (Test-Path -LiteralPath $DirectoryPath)) {
+    [void](New-Item -ItemType Directory -Path $DirectoryPath -Force)
   }
-
-  [void](New-Item -ItemType Directory -Path $DirectoryPath -Force)
 }
 
 function Package-ThemeDirectory {
@@ -113,7 +111,7 @@ if (-not (Test-Path -LiteralPath $themesRoot)) {
   throw "Themes root '$themesRoot' does not exist."
 }
 
-Ensure-CleanDirectory -DirectoryPath $distRoot
+Ensure-Directory -DirectoryPath $distRoot
 
 $themeDirectories = Get-ThemeDirectories -ThemesRoot $themesRoot -RequestedThemeIds $ThemeIds
 $artifacts = foreach ($directory in $themeDirectories) {

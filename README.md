@@ -1,6 +1,6 @@
-# Yulora Themes
+# FishMark Themes
 
-Yulora 官方主题展示与下载仓库。
+FishMark 官方主题展示与下载仓库。
 
 当前收录主题：
 
@@ -23,10 +23,10 @@ Yulora 官方主题展示与下载仓库。
 
 ## 安装方式
 
-1. 打开 Yulora 的主题目录 `<userData>/themes/`
+1. 打开 FishMark 的主题目录 `<userData>/themes/`
 2. 从 GitHub Releases 下载目标主题 zip
 3. 解压后确认目录结构为 `<themeId>/manifest.json`
-4. 回到 Yulora 设置页，点击“刷新主题”
+4. 回到 FishMark 设置页，点击“刷新主题”
 
 ## 主题列表
 

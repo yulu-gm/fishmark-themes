@@ -7,6 +7,7 @@ FishMark 官方主题展示与下载仓库。
 - `Ember Ascend`
 - `Pearl Drift`
 - `Rain Glass`
+- `Sakura Cat`
 
 ## 仓库内容
 
@@ -47,6 +48,12 @@ FishMark 官方主题展示与下载仓库。
 - 模式：`light` / `dark`
 - 关键词：雨窗、冷雾、玻璃折射
 - 亮点参数：雨量、玻璃模糊、闪电效果、镜头呼吸、冷色调强度
+
+### Sakura Cat
+
+- 模式：`light` / `dark`
+- 关键词：樱花、奶油粉、柔和双模
+- 亮点参数：无可调参数，静态轻量主题
 
 ## 展示页数据维护
 
@@ -103,4 +110,4 @@ powershell -ExecutionPolicy Bypass -File .\scripts\package-themes.ps1
 
 ## Release
 
-`release-themes.yml` 会在 tag 推送或手动触发时打包三个主题 zip 并上传到 GitHub Release。
+`release-themes.yml` 会在 tag 推送或手动触发时打包 `themes/` 下的主题 zip 并上传到 GitHub Release。

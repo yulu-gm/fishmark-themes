@@ -1,7 +1,7 @@
 (function () {
   const releaseBaseUrl =
-    "https://github.com/yulu-gm/yora-themes/releases/latest/download/";
-  const repositoryBaseUrl = "https://github.com/yulu-gm/yora-themes/tree/main/themes/";
+    "https://github.com/yulu-gm/fishmark-themes/releases/latest/download/";
+  const repositoryBaseUrl = "https://github.com/yulu-gm/fishmark-themes/tree/main/themes/";
   const fallbackThemes = [
     {
       id: "ember-ascend",
@@ -53,6 +53,23 @@
       surface:
         "radial-gradient(circle at 22% 20%, rgba(164, 216, 255, 0.28), transparent 40%), linear-gradient(180deg, rgba(13, 27, 42, 0.9) 0%, rgba(15, 39, 64, 0.92) 100%)",
       downloadFile: "rain-glass-2.0.0.zip"
+    },
+    {
+      id: "sakura-cat",
+      name: "Sakura Cat",
+      version: "1.0.0",
+      modes: ["light", "dark"],
+      tagline: "樱花粉与深梅夜色的可爱双模主题，适合轻松写作与日常记录。",
+      summary:
+        "用奶油粉、花瓣玫瑰和柔和梅子暗色统一编辑器、侧栏与 Markdown 细节。它是无 shader 的静态主题，切换轻快，动态效果关闭时也保持完整观感。",
+      features: ["双模式", "樱花粉界面", "静态轻量", "可爱状态点缀"],
+      parameters: [],
+      coverImage: null,
+      accentStart: "#ffb3c0",
+      accentEnd: "#a23857",
+      surface:
+        "radial-gradient(circle at 24% 18%, rgba(255, 227, 234, 0.92), rgba(255, 227, 234, 0) 36%), linear-gradient(135deg, #fff5f6 0%, #ffe0e7 52%, #f6c5d1 100%)",
+      downloadFile: "sakura-cat-1.0.0.zip"
     }
   ];
 

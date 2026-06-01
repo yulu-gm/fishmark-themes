@@ -87,8 +87,10 @@ function Test-HasDynamicBackground {
     return $false
   }
 
-  foreach ($surface in @($Manifest.surfaces.PSObject.Properties.Value)) {
-    if ($surface.kind -eq "fragment") {
+  foreach ($surfaceProperty in @($Manifest.surfaces.PSObject.Properties)) {
+    $surface = $surfaceProperty.Value
+    $kindProperty = $surface.PSObject.Properties["kind"]
+    if ($null -ne $kindProperty -and $kindProperty.Value -eq "fragment") {
       return $true
     }
   }
@@ -106,7 +108,8 @@ function Test-HasImageTexture {
     return $false
   }
 
-  foreach ($surface in @($Manifest.surfaces.PSObject.Properties.Value)) {
+  foreach ($surfaceProperty in @($Manifest.surfaces.PSObject.Properties)) {
+    $surface = $surfaceProperty.Value
     $channelProperty = $surface.PSObject.Properties["channels"]
     if ($null -eq $channelProperty -or $null -eq $channelProperty.Value) {
       continue
@@ -125,8 +128,10 @@ function Test-HasImageTexture {
 function Get-DefaultFeatures {
   param(
     [Parameter(Mandatory = $true)]
+    [AllowEmptyCollection()]
     [string[]]$Modes,
     [Parameter(Mandatory = $true)]
+    [AllowEmptyCollection()]
     [string[]]$Parameters,
     [Parameter(Mandatory = $true)]
     [bool]$HasDynamicBackground,
@@ -160,8 +165,10 @@ function Get-DefaultFeatures {
 function Get-DefaultTagline {
   param(
     [Parameter(Mandatory = $true)]
+    [AllowEmptyCollection()]
     [string[]]$Modes,
     [Parameter(Mandatory = $true)]
+    [AllowEmptyCollection()]
     [string[]]$Parameters
   )
 
@@ -177,8 +184,10 @@ function Get-DefaultTagline {
 function Get-DefaultSummary {
   param(
     [Parameter(Mandatory = $true)]
+    [AllowEmptyCollection()]
     [string[]]$Modes,
     [Parameter(Mandatory = $true)]
+    [AllowEmptyCollection()]
     [string[]]$Parameters,
     [Parameter(Mandatory = $true)]
     [bool]$HasDynamicBackground,
@@ -305,11 +314,11 @@ function Get-ThemeRecord {
     id = $themeId
     name = [string]$manifest.name
     version = $version
-    modes = $modes
+    modes = @($modes)
     tagline = $tagline
     summary = $summary
-    features = $features
-    parameters = $parameters
+    features = @($features)
+    parameters = @($parameters)
     coverImage = $coverImage
     accentStart = $accentStart
     accentEnd = $accentEnd

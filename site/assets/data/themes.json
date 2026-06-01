@@ -20,7 +20,7 @@
                            "上升呼吸",
                            "工作区毛玻璃"
                        ],
-        "coverImage":  null,
+        "coverImage":  "./assets/generated/covers/ember-ascend.png",
         "accentStart":  "#ff934f",
         "accentEnd":  "#7a2310",
         "surface":  "radial-gradient(circle at 50% 28%, rgba(255, 183, 77, 0.9), rgba(122, 35, 16, 0) 52%), linear-gradient(180deg, #140d0c 0%, #2f1208 54%, #0f0909 100%)",
@@ -48,7 +48,7 @@
                            "颗粒感",
                            "工作区毛玻璃"
                        ],
-        "coverImage":  null,
+        "coverImage":  "./assets/generated/covers/pearl-drift.png",
         "accentStart":  "#d9d4ff",
         "accentEnd":  "#6b68d4",
         "surface":  "radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0) 34%), radial-gradient(circle at 72% 28%, rgba(154, 151, 234, 0.7), rgba(154, 151, 234, 0) 36%), linear-gradient(135deg, #f8f3ff 0%, #d9d4ff 48%, #b7d5da 100%)",
@@ -103,7 +103,7 @@
         "parameters":  [
 
                        ],
-        "coverImage":  null,
+        "coverImage":  "./assets/generated/covers/sakura-cat.png",
         "accentStart":  "#ffb3c0",
         "accentEnd":  "#a23857",
         "surface":  "radial-gradient(circle at 24% 18%, rgba(255, 227, 234, 0.92), rgba(255, 227, 234, 0) 36%), linear-gradient(135deg, #fff5f6 0%, #ffe0e7 52%, #f6c5d1 100%)",

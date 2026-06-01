@@ -106,7 +106,7 @@
   function renderPreview(theme) {
     if (theme.coverImage) {
       return `
-        <div class="theme-preview has-cover">
+        <div class="theme-preview has-cover" style="background:${escapeHtml(theme.surface)};">
           <img src="${escapeHtml(theme.coverImage)}" alt="${escapeHtml(theme.name)} cover" loading="lazy" />
         </div>
       `;
